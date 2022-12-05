@@ -6,3 +6,18 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+
+import Shelf from './Shelf.js';
+
+const bookShelf = new Shelf(
+    "Harry Potter",
+    "30 inches",
+    17,
+    "family room by desk",
+    false,
+)
+
+console.log("Harry Potter Shelf: ", bookShelf)
+console.log("Decorated Status: ", bookShelf.decorated)
+bookShelf.decorateShelf(true);
+console.log("Decorated Status after function: ", bookShelf.decorated)
